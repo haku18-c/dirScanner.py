@@ -77,14 +77,11 @@ class HTTPConnectionHandler:
                  print('target not found! or please check your connection')
 
 if __name__ == '__main__':
-
      parser = argparse.ArgumentParser(description="Python3 dirscanner, search web directory")
      parser.add_argument('-t',help='target url ',type=str)
      parser.add_argument('-c', help='cookie (optional)', type=str)
      parser.add_argument('-w', help='path wordlist', type=str)
      args = parser.parse_args()
-
-
      cookie = None
      if args.c:
           cookie = args.c
